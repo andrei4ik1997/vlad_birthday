@@ -1,0 +1,16 @@
+<header class="topbar">
+  <div class="counter">
+    <span class="label">Нажал</span>
+    <span class="value">
+      {{ counter() }}
+    </span>
+  </div>
+</header>
+
+<main class="stage">
+  <h1 class="title">Нажми столько сколько тебе сегодня исполнилось</h1>
+
+  <button type="button" class="picture" [class.boost]="boosting()" (click)="onPictureClick()">
+    <img class="car" src="assets/click.png" alt="Нажми на картинку" />
+  </button>
+</main>

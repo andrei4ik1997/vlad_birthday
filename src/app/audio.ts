@@ -18,4 +18,11 @@ export class AudioService {
       .play()
       .catch((err) => console.error('Ошибка воспроизведения музыки:', err));
   }
+
+  stop(): void {
+    if (this.audio) {
+      this.audio.pause();
+      this.audio.currentTime = 0;
+    }
+  }
 }

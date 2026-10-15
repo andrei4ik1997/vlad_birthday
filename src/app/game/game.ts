@@ -1,6 +1,5 @@
 import { Component, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { AudioService } from '../audio';
 import { GameState } from '../game-state';
 
 @Component({
@@ -16,7 +15,6 @@ export class Game {
   protected readonly target = this.TARGET;
 
   private readonly router = inject(Router);
-  private readonly audioService = inject(AudioService);
   private readonly gameState = inject(GameState);
 
   protected onPictureClick(): void {
@@ -28,7 +26,6 @@ export class Game {
 
     if (next >= this.TARGET) {
       this.gameState.grantAccess();
-      this.audioService.play('assets/tokyo-drift.mp3');
       this.router.navigate(['/winner']);
     }
   }

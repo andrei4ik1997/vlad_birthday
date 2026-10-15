@@ -1,6 +1,6 @@
 :host {
   display: block;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family:
     system-ui,
     -apple-system,
@@ -13,7 +13,7 @@
 
 .winner {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -192,7 +192,7 @@
 
 @keyframes fall {
   to {
-    transform: translateY(110vh) rotate(720deg);
+    transform: translateY(110dvh) rotate(720deg);
   }
 }
 

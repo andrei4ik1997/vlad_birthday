@@ -1,6 +1,7 @@
 :host {
   display: block;
-  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
   font-family:
     system-ui,
     -apple-system,
@@ -57,7 +58,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 80dvh;
   gap: 28px;
   padding: 24px;
   text-align: center;
@@ -130,7 +131,7 @@
   }
 
   .stage {
-    min-height: 84vh;
+    min-height: 84dvh;
     gap: 24px;
     padding: 16px;
   }
